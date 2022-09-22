@@ -1,25 +1,28 @@
 name: learn-github-actions
 on: [push]
 jobs:
-#  check-bats-version:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: actions/checkout@v3
-#      - uses: actions/setup-node@v3
-#        with:
-#          node-version: '14'
-#      - run: npm install -g bats
-#      - run: bats -v
-  build-and-test:
+  check-bats-version:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-java@v1
+      - uses: actions/setup-java@v3
         with:
           java-version: 8
-      - name: Maven install
-        run: |
-          cd presto
-          mvn install -DskipTests
-      - name: Maven tests
-          mvn test
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: npm install -g bats
+      - run: bats -v
+#  build-and-test:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v3
+#      - uses: actions/setup-java@v1
+#        with:
+#          java-version: 8
+#      - name: Maven install
+#        run: |
+#          cd presto
+#          mvn install -DskipTests
+#      - name: Maven tests
+#          mvn test
