@@ -22,5 +22,5 @@ jobs:
           pwd
           cd presto
           mvn install -DskipTests
-#      - name: Maven tests
-#          mvn test
+      - name: Maven tests
+        run: mvn test
