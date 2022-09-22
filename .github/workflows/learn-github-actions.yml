@@ -17,9 +17,10 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: 8
-#      - name: Maven install
-#        run: |
-#          cd presto
+      - name: Maven install
+        run: |
+          pwd
+          cd presto
 #          mvn install -DskipTests
 #      - name: Maven tests
 #          mvn test
