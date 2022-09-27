@@ -10,7 +10,7 @@ public class App
 {
     public boolean sayHi()
     {
-        System.out.println("Hi!");
+        System.out.println("Hey!");
 	return true;
     }
 
