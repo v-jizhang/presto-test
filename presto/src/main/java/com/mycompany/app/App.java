@@ -8,6 +8,11 @@ import java.util.Arrays;
  */
 public class App 
 {
+    public void sayHi()
+    {
+        System.out.println("Hi!");
+    }
+
     public static void main( String[] args )
     {
         Arrays.stream(args).forEach(System.out::println);
