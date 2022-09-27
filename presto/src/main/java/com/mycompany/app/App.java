@@ -8,9 +8,10 @@ import java.util.Arrays;
  */
 public class App 
 {
-    public void sayHi()
+    public boolean sayHi()
     {
         System.out.println("Hi!");
+	return true;
     }
 
     public static void main( String[] args )
