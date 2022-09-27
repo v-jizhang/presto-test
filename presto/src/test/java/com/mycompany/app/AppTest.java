@@ -16,7 +16,6 @@ public class AppTest
     public void shouldAnswerWithTrue()
     {
         App app = new App();
-        app.sayHi();
-        assertTrue(true);
+        assertTrue(app.sayHi());
     }
 }
