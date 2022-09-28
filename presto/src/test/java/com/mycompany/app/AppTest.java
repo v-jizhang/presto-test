@@ -15,4 +15,11 @@ public class AppTest
         App app = new App();
         assertTrue(app.sayHi());
     }
+
+    @Test
+    public void testAddition()
+    {
+        Calc calc = new Calc();
+	assertTrue(calc.add(1, 1) == 2);
+    }
 }

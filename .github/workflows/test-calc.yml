@@ -1,15 +1,6 @@
-name: learn-github-actions
+name: test-calc-actions
 on: [push]
 jobs:
-  check-bats-version:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
   build-and-test:
     runs-on: ubuntu-latest
     steps:
@@ -25,4 +16,4 @@ jobs:
       - name: Maven tests
         run: |
           cd presto
-          mvn test -Dtest=com.mycompany.app.AppTest#shouldAnswerWithTrue
+          mvn test -Dtest=com.mycompany.app.AppTest#testAddition
