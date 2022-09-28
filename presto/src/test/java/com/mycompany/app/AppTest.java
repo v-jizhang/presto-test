@@ -21,6 +21,6 @@ public class AppTest
     {
         Calc calc = new Calc();
 	assertTrue(calc.add(1, 1) == 2);
-	assertFalse(calc.add(1, 1) != 2);
+	assertTrue(calc.add(1, 1) != 3);
     }
 }
