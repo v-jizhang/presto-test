@@ -20,8 +20,15 @@ public class AppTest
     public void testAddition()
     {
         Calc calc = new Calc();
-	assertTrue(calc.add(1, 1) == 2);
-	assertTrue(calc.add(1, 1) == 4);
+	    assertTrue(calc.add(1, 1) == 2);
+	    assertTrue(calc.add(1, 1) == 4);
+    }
+
+    @Test
+    public void testSubstract()
+    {
+        Calc calc = new Calc();
+        assertTrue(calc.substract(10, 5) == 5);
     }
 }
 
