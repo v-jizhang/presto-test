@@ -36,5 +36,12 @@ public class AppTest
         Calc calc = new Calc();
         assertTrue(calc.multiply(2, 5) == 10);
     }
+
+    @Test
+    public void testDivide()
+    {
+        Calc calc = new Calc();
+        assertTrue(calc.divide(11, 3) == 3);
+    }
 }
 
