@@ -30,5 +30,11 @@ public class AppTest
         Calc calc = new Calc();
         assertTrue(calc.substract(10, 5) == 5);
     }
+
+    @Test void testMultiply()
+    {
+        Calc calc = new Calc();
+        assertTrue(calc.multiply(2, 5) == 10);
+    }
 }
 
