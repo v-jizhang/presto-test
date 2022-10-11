@@ -26,4 +26,9 @@ public class Calc
     {
         return a / b;
     }
+
+    public int abs(int a)
+    {
+        return a > 0? a: -a;
+    }
 }
