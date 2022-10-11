@@ -51,5 +51,12 @@ public class AppTest
         Calc calc = new Calc();
         assertTrue(calc.abs(-5) == 5);
     }
+
+    @Test
+    public void testMod()
+    {
+        Calc calc = new Calc();
+        assertTrue(calc.mod(10, 3) == 1);
+    }
 }
 
