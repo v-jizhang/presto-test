@@ -1,0 +1,27 @@
+name: 'Stale issues and pull requests'
+on:
+  schedule:
+    - cron: '43 15 * * *'
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v6
+        with:
+          stale-issue-message: >
+            This pull request has been automatically marked as stale because it has not had
+            recent activity. If you'd still like this PR merged, please comment on the task,
+            make sure you've addressed reviewer comments, and rebase on the latest master.
+            Thank you for your contributions!
+          stale-pr-message: >
+            This issue has been automatically marked as stale because it has not had
+            any activity in the last 2 years. If you feel that this issue is important,
+            just comment and the stale tag will be removed; otherwise it will be
+            closed in 7 days. This is an attempt to ensure that our open issues remain
+            valuable and relevant so that we can keep track of what needs to be done and
+            prioritize the right things.
+          days-before-issue-stale: 1 #730 # ~2 years
+          days-before-pr-stale: 1 # 180 # ~6 months
+          days-before-issue-close: 1 #7
+          days-before-pr-close: 1 #7
