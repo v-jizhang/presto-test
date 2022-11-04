@@ -21,7 +21,7 @@ public class AppTest
     {
         Calc calc = new Calc();
 	    assertTrue(calc.add(1, 1) == 2);
-	    assertTrue(calc.add(1, 1) == 4);
+	    assertTrue(calc.add(1, 3) == 4);
     }
 
     @Test
@@ -31,10 +31,32 @@ public class AppTest
         assertTrue(calc.substract(10, 5) == 5);
     }
 
-    @Test void testMultiply()
+    @Test
+    public void testMultiply()
     {
         Calc calc = new Calc();
         assertTrue(calc.multiply(2, 5) == 10);
+    }
+
+    @Test
+    public void testDivide()
+    {
+        Calc calc = new Calc();
+        assertTrue(calc.divide(11, 3) == 3);
+    }
+
+    @Test
+    public void testAbs()
+    {
+        Calc calc = new Calc();
+        assertTrue(calc.abs(-5) == 5);
+    }
+
+    @Test
+    public void testMod()
+    {
+        Calc calc = new Calc();
+        assertTrue(calc.mod(10, 3) == 1);
     }
 }
 
