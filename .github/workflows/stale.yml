@@ -21,7 +21,7 @@ jobs:
             closed in 7 days. This is an attempt to ensure that our open issues remain
             valuable and relevant so that we can keep track of what needs to be done and
             prioritize the right things.
-          days-before-issue-stale: 1 #730 # ~2 years
-          days-before-pr-stale: 1 # 180 # ~6 months
-          days-before-issue-close: 1 #7
-          days-before-pr-close: 1 #7
+          days-before-issue-stale: 730 # ~2 years
+          days-before-pr-stale: 180 # ~6 months
+          days-before-issue-close: 7
+          days-before-pr-close: 7
