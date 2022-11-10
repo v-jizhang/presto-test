@@ -16,4 +16,4 @@ jobs:
       - name: Maven tests
         run: |
           cd presto
-          mvn test -Dtest=com.mycompany.app.AppTest#testAddition
+          mvn test
