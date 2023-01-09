@@ -31,4 +31,8 @@ public class Calc
     {
         return a > 0? a: -a;
     }
+
+    public int neg(int a) {
+        return -a;
+    }
 }
