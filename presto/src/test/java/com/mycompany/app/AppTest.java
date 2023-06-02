@@ -50,6 +50,7 @@ public class AppTest
     {
         Calc calc = new Calc();
         assertTrue(calc.abs(-5) == 5);
+        assertTrue(calc.abs(5) == 5);
     }
 
     @Test
