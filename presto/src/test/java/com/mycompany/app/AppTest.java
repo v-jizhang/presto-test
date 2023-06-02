@@ -57,6 +57,7 @@ public class AppTest
     {
         Calc calc = new Calc();
         assertTrue(calc.mod(10, 3) == 1);
+        assertTrue(!calc.mod(10, 3) == 2);
     }
 }
 
