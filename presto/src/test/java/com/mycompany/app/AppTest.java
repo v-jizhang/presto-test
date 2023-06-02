@@ -29,6 +29,7 @@ public class AppTest
     {
         Calc calc = new Calc();
         assertTrue(calc.substract(10, 5) == 5);
+        assertTrue(calc.substract(5, 12345) == -12340);
     }
 
     @Test
