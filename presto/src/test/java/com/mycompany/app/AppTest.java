@@ -55,9 +55,10 @@ public class AppTest
     @Test
     public void testMod()
     {
+        // Comment
         Calc calc = new Calc();
         assertTrue(calc.mod(10, 3) == 1);
-        assertTrue(!calc.mod(10, 3) == 2);
+        assertTrue(!(calc.mod(10, 3) == 2));
     }
 }
 
